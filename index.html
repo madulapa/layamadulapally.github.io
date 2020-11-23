@@ -72,6 +72,8 @@
         #projects {
             margin: 15px;
             padding-top: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .proj-container {
@@ -112,12 +114,6 @@
             width: 330px;
             height: auto;
             text-align: center;
-        }
-
-        #projects {
-            display: flex;
-            justify-content: center;
-
         }
 
         /* Contact me */
@@ -202,55 +198,86 @@
             color: white;
         }
 
+        #logo {
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-left: 25px;
+            padding-top: 15px;
+            color: #395975;
+        }
+
         .clearfloat {
             clear: both;
+        }
+
+        #resume {
+            text-align: center;
+            width: 100%;
+            padding-bottom: 100px;
+
+        }
+
+        iframe {
+            border-style: solid;
+            border-width: 50px;
+            border-color: #87CEEC;
+            width: 800px;
+            height: 1000px;
+
         }
     </style>
 
 </head>
 
 <body>
+    <div id="logo">
+        <h4><strong>L A Y A &nbsp; M A D U L A P A L L Y</strong></h4>
+    </div>
+    <!--logo-->
     <div id="navbar">
         <div id="nav-wrapper">
             <a href="">HOME</a>
             <a href="#about_page">ABOUT</a>
             <a href="#projects">PROJECTS</a>
-            <a href="resume.pdf" target="_blank">RESUME</a>
+            <a href="#resume">RESUME</a>
             <a href="#contact-me">CONTACT ME</a>
-        </div><!--nav wrapper-->
+        </div>
+        <!--nav wrapper-->
     </div> <!-- nav bar-->
     <div id="home" class="container-fluid">
-    </div><!--home-->
+    </div>
+    <!--home-->
 
     <div id="about_page">
 
         <div id="photo-grid">
             <div class="row">
                 <div class="column">
-                    <a href="images/besties.jpeg" data-lightbox="gallery" data-title="homefriends"><img
+                    <a href="images/besties.jpeg" data-lightbox="gallery" data-title="High school best friends"><img
                             src="images/besties.jpeg" alt="home friends" class="photo"></a>
-                    <a href="images/dance.JPG" data-lightbox="gallery" data-title="dance"><img src="images/dance.JPG"
+                    <a href="images/dance.JPG" data-lightbox="gallery" data-title="Kuchipudi performance"><img src="images/dance.JPG"
                             alt="dance" class="photo"></a>
-                    <a href="images/rachel.JPG" data-lightbox="gallery" data-title="rachel"><img src="images/rachel.JPG"
+                    <a href="images/rachel.JPG" data-lightbox="gallery" data-title="My best friend and I at Disneyland"><img src="images/rachel.JPG"
                             alt="best friend" class="photo"></a>
 
                 </div>
                 <!--column-->
                 <div class="column">
-                    <a href="images/loki1.jpeg" data-lightbox="gallery" data-title="loki"><img src="images/loki1.jpeg"
+                    <a href="images/loki1.jpeg" data-lightbox="gallery" data-title="My puppy Loki"><img src="images/loki1.jpeg"
                             alt="loki" class="photo"></a>
-                    <a href="images/me@hoco.JPG" data-lightbox="gallery" data-title="hoco"><img src="images/me@hoco.JPG"
+                    <a href="images/me@hoco.JPG" data-lightbox="gallery" data-title="Me at my senior year homecoming"><img src="images/hoco.jpeg"
                             alt="hoco" class="photo"></a>
-                    <a href="images/haldi.jpeg" data-lightbox="gallery" data-title="haldi"><img src="images/haldi.jpeg"
+                    <a href="images/haldi.jpeg" data-lightbox="gallery" data-title="My cousin's wedding Haldi in India"><img src="images/haldi.jpeg"
                             alt="haldi" class="photo"></a>
                 </div>
                 <!--column-->
                 <div class="column">
-                    <a href="images/sepbonfire.jpeg" data-lightbox="gallery" data-title="bonfire"><img
+                    <a href="images/sepbonfire.jpeg" data-lightbox="gallery" data-title="USC Sigma Eta Pi bonfire"><img
                             src="images/sepbonfire.jpeg" alt="bonfire" class="photo"></a>
-                    <a href="images/sepinvite.jpg" data-lightbox="gallery" data-title="invite"><img
+                    <a href="images/sepinvite.jpg" data-lightbox="gallery" data-title="USC Sigma Eta Pi Invite"><img
                             src="images/sepinvite.jpg" alt="invite" class="photo"></a>
-                    <a href="images/sister.jpeg" data-lightbox="gallery" data-title="sister"><img
+                    <a href="images/sister.jpeg" data-lightbox="gallery" data-title="My sister and I in New York"><img
                             src="images/sister.jpeg" alt="sister" class="photo"></a>
                 </div>
                 <!--column-->
@@ -309,7 +336,8 @@
                 <!--picture-->
                 <p>I am the tech lead at Stemnova which is a startup that teaches STEM education to elementary and
                     middle school students. As a tech lead I am working on developing a CS curriculum where we will
-                    teach students the fundamentals of object-oriented programming. In addition I am working to develop the technical
+                    teach students the fundamentals of object-oriented programming. In addition I am working to develop
+                    the technical
                     aspects of our curriculum on global warming through the lense of many different aspects of society
                     from biology to politics. </p>
             </div>
@@ -351,11 +379,31 @@
                     earned an award for the best integration of MongoDB Atlas.</p>
             </div>
             <!--proj-container-->
+            <div class="proj-container">
+                <div class="picture">
+                    <img class="image" src="images/adamchat1.png" alt="Adamchat">
+                </div>
+                <!--picture-->
+                <p>Project Adamchat is a platform in which people who are learning foreign languages can connect with
+                    native speakers to practice conversation. The application pairs up individuals who are fluent or
+                    semi-fluent in multiple languages into video and chat based pairs based on skill.
+                    For this project, we used a multitude of tools and technologies including NodeJS, ExpressJS,
+                    Keycloak, MongoDB, Java servlets, socket.io, and bootstrap.
+                </p>
+            </div>
+            <!--proj-container-->
         </div>
         <!--row-->
         <div class="clearfloat"></div>
     </div>
     <!--projects-->
+    <div id="resume">
+        <div id="resume-border">
+            <iframe src="resume.pdf" title="Resume"></iframe>
+        </div>
+        <!--resume-border-->
+    </div>
+    <!--resume-->
     <div id="contact-me">
         <div id="contact-text">
             <h2>Who are you?</h2>
